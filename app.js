@@ -7,6 +7,10 @@ app.get("/", function(req, res){
     res.send("Bonjour");
 });
 
+app.get("*", function(req, res){
+    res.send("you are a star");
+})
+
 app.get("/blop", function(req, res){
     res.send("Bonbye");
 });
